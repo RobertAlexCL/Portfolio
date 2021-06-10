@@ -10,23 +10,12 @@ const useStyles = makeStyles((theme) => ({
         color: theme.palette.primary.main
     },
     title: {
-        color: '#007CC7',
+        color: theme.palette.primary.main,
         padding: theme.spacing(4)
     },
     title2: {
-        color: '#4DA8DA',
+        color: theme.palette.primary.dark,
         padding: theme.spacing(2)
-    },
-    bodycolor: {
-        color: '#203647',
-        padding: theme.spacing(4)
-    },
-    background: {
-        background: '#3C1874',
-        height: '81vh'
-    },
-    buttonbar: {
-        color: '#932432',
     }
 }))
 
@@ -43,7 +32,7 @@ const About = () => {
                     <Typography variant='body1' className={classes.title2}>My main goal as a lover of computer science is to give a great service to the world that i can by transforming requests from the people with whom I work to beautiful software. </Typography>
                     <Typography variant='body1' className={classes.title2}>I like to say that one of the reasons why computer science and software development is beautiful is because you always have to be learning, whether in the branch where you currently work or when you enter a completely different branch.</Typography>
                     <Typography variant='body1' className={classes.title2}>My work philosophy is that I have to be in good physical condition and eat healthy so that my brain works optimally and my body can withstand hours of hard work in the front of a screen.</Typography>
-                    <Typography variant='body1' className={classes.title2}>When I'm not working, I like being able to share with my family, watch movies or hangout with friends.</Typography>
+                    <Typography variant='body1' className={classes.title2}>When I'm not working, I like being able to have time with my family, watch movies or hangout with friends.</Typography>
                 </Grid>
             </Grid>
         </Container>

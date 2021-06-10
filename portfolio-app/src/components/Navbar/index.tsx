@@ -6,7 +6,7 @@ import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import { useHistory } from 'react-router-dom'
 import clsx from 'clsx'
-import { Button } from '@material-ui/core';
+import { Button, ButtonBase } from '@material-ui/core';
 import Logo from '../../resources/images/RCLogo2.png'
 
 const useStyles = makeStyles((theme) => ({
@@ -15,13 +15,13 @@ const useStyles = makeStyles((theme) => ({
     },
     appbar: {
         flexGrow: 1,
-        backgroundColor: '#007CC7'
+        backgroundColor: theme.palette.primary.main
     },
     buttonbar: {
         color: 'white',
     },
     buttonActive: {
-        color: theme.palette.primary.main
+        color: theme.palette.secondary.dark
     }
 }))
 
@@ -35,7 +35,9 @@ const Navbar = () => {
                 <Container>
                     <Grid container justify={'space-between'} alignItems={'center'}>
                         <Grid item>
+                        <ButtonBase onClick={() => push('/')}>
                             <img src={Logo} alt='logo' className={classes.logo} />
+                        </ButtonBase>
                         </Grid>
                         <Grid item>
                             <Button className={clsx({

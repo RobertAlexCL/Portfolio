@@ -13,22 +13,15 @@ const useStyles = makeStyles((theme) => ({
         color: theme.palette.primary.main
     },
     title: {
-        color: '#007CC7'
+        color: theme.palette.primary.main
     },
     title2: {
-        color: '#4DA8DA',
+        color: theme.palette.primary.light,
         padding: theme.spacing(2)
     },
     bodycolor: {
-        color: '#203647',
+        color: theme.palette.primary.dark,
         padding: theme.spacing(4)
-    },
-    background: {
-        background: '#3C1874',
-        height: '81vh'
-    },
-    buttonbar: {
-        color: '#932432',
     }
 }))
 
@@ -42,11 +35,11 @@ const HomePage = () => {
                 <Grid item xs={12} sm={6}>
                     <Typography variant='body1' className={classes.bodycolor}>Hi, my name is</Typography>
                     <Typography variant='h1' className={classes.title}>Roberto Castillo</Typography>
-                    <Typography variant='h2' className={classes.title2}>I'm a Software Developer</Typography>
-                    <Typography variant='body1' className={classes.title2}>I have many skills, like React development in Typescript and backend managment in Firebase Cloud Functions</Typography>
+                    <Typography variant='h2' className={classes.title2}>I'm a Frontend Web Developer</Typography>
+                    <Typography variant='body1' className={classes.title2}>I have many skills, like React development in Typescript and also have knowledge in backend managment with Firebase Cloud Functions</Typography>
                 </Grid>
                 <Grid item xs={12} sm={6}>
-                    <Button variant='outlined' onClick={() => push('./contact')} color='primary'>
+                    <Button variant='outlined' onClick={() => push('./contact')} color='secondary'>
                         Contact Me 
                     </Button>
                 </ Grid>
